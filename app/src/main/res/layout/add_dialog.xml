@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.Dialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintDimensionRatio="1:1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/bOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/timePicker"
+            android:layout_below="@+id/timePicker"
+            android:layout_marginTop="18dp"
+            android:text="Ok"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <Button
+            android:id="@+id/bCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bOk"
+            android:layout_alignBottom="@+id/bOk"
+            android:layout_alignStart="@+id/timePicker"
+            android:text="Cancel"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="26dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
